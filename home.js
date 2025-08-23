@@ -10,5 +10,23 @@ document.getElementById("btn-add-money").addEventListener('click' , function(eve
     
     // Get The Pin Number:
     const inputPinNumber = document.getElementById("input-pin-number").value
-    
+
+    if (inputPinNumber === "4321") {
+        // console.log("Money Recived");
+        // Get The Current Balance
+        const accountBalance = document.getElementById("account-balance").innerText; //যেহেতু এটা একটা ডিভ সেহেতু আমরা innerText দিয়েছি,Input এর ক্ষেত্রে কেবল . ভ্যালু দিয়ে মান চেক করতে হয়,আর ডিভের ক্ষেত্রে InnerText,যদি এখানে Value দেই তবে আন্ডিফাইন্ড আসবে;
+
+        //const newBalance = accountBalance + addMoneyInput; evhbabe dile problem dhekabe karon egula string
+        const addMoneyNumber = parseFloat(addMoneyInput);
+        const balanceNumber = parseFloat(accountBalance);
+        
+        const newBalance = addMoneyNumber + balanceNumber ;
+        // console.log(newBalance);
+
+        document.getElementById("account-balance").innerText = newBalance ;
+        
+        
+    } else {
+        alert("Falied To Recevied Money");
+    }
 })
