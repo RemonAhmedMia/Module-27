@@ -7,8 +7,10 @@ document.getElementById("btn-login").addEventListener('click' , function(event){
     console.log(phoneNumber , pinNumber);
     
     // This is Temoporary,You Should not use it
-    if(phoneNumber === "01781233421" && pinNumber === "1234") {
+    if(phoneNumber === "01318664312" && pinNumber === "1234") {
         console.log("You Are Loged In");
+        //
+        window.location.href = '/home.html'
     } else {
         alert("Wrong Phone Number Or Pin")
     }
