@@ -7,6 +7,8 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-pink-500: oklch(65.6% 0.241 354.308);
+    --color-pink-700: oklch(52.5% 0.223 3.958);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -265,6 +267,12 @@
   }
   .text-black {
     color: var(--color-black);
+  }
+  .text-pink-500 {
+    color: var(--color-pink-500);
+  }
+  .text-pink-700 {
+    color: var(--color-pink-700);
   }
   .text-white {
     color: var(--color-white);
