@@ -49,7 +49,26 @@
 //     } else{
 //         alert("Failed To Get Add Money")
 //     }
-// })
+// });
 
+// ======================= Practice-02
 
-document.getElementById("")
+document.getElementById("btn-add-money").addEventListener('click' , function(event) {
+    event.preventDefault();
+
+    const addAmount = document.getElementById("add-money-input").value;
+    const addInput = document.getElementById("input-pin-number").value;
+
+    if (addInput === "4321") {
+        const accountBalance = document.getElementById("account-balance").innerText;
+        const addMoneyNumber = parseFloat(addAmount);
+        const accountBalanceNumber = parseFloat(accountBalance);
+
+        const newBalance = addMoneyNumber + accountBalanceNumber;
+        document.getElementById("account-balance").innerText = newBalance;
+    } else {
+        alert("Failed To Add Money")
+    }
+});
+
+// Last Practice==============

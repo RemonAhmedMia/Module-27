@@ -32,7 +32,7 @@
       </div>
 
       <!-- Add Money Form -->
-       <div class="card bg-base-100 text-black shadow-2xl mt-[50px] w-full max-w-sm">
+       <div class="hidden card bg-base-100 text-black shadow-2xl mt-[50px] w-full max-w-sm">
       <div class="card-body">
         <fieldset class="fieldset">
           <label class="label">Amount</label>
@@ -44,10 +44,26 @@
         </fieldset>
       </div>
     </div>
+
+    <!-- Cash Out Strat -->
+     <div class="card bg-base-100 text-black shadow-2xl mt-[50px] w-full max-w-sm">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label">Amount</label>
+          <input id="input-cash-out" type="text" class="input" placeholder="Cash Out Amount" />
+          <label class="label">Pin</label>
+          <input id="input-cash-out-pin" type="password" class="input" placeholder="Pin Number" />
+          <div><a class="link link-hover">Forgot password?</a></div>
+          <button id="btn-cash-out" class="btn btn-neutral mt-4">Cash Out</button>
+        </fieldset>
+      </div>
+    </div>
+    <!-- Cash Out End -->
   </div>
 </div>
     </main>
 
     <script src="home.js"></script>
+    <script src="cashOut.js"></script>
 </body>
 </html>
