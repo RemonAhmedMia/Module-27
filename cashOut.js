@@ -18,6 +18,13 @@ document.getElementById("btn-cash-out").addEventListener('click' , function(even
 // =========Features Part======
 document.getElementById("show-btn-cash-out").addEventListener('click' , function(){
     document.getElementById("cash-out-form").classList.remove('hidden');
-    //classList হলো JavaScript এর একটা খুব গুরুত্বপূর্ণ property, যেটা দিয়ে  HTML element এর class add, remove, toggle, check ইত্যাদি করতে পারি ;
     document.getElementById("add-money-form").classList.add("hidden");
+});
+
+//Show Add Money Form And Hide Cash Out Form==
+
+document.getElementById("show-btn-add-money").addEventListener('click' , function(){
+    document.getElementById("add-money-form").classList.remove("hidden");
+
+    document.getElementById("cash-out-form").classList.add("hidden");
 })
